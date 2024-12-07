@@ -108,39 +108,62 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="mt-16 flex flex-wrap justify-center gap-6">
-        {[{
-          name: 'Emma Watson',
-          title: 'Managing Director',
-          image: '/person1.png',
-        }, {
-          name: 'John Doe',
-          title: 'Marketing Manager',
-          image: '/person2.png',
-        }, {
-          name: 'Will Smith',
-          title: 'Product Designer',
-          image: '/person3.png',
-        }].map((person, index) => (
-          <div key={index} className='flex flex-col items-center'>
-            <div className='bg-[#F5F5F5] w-[370px] h-[430px]'>
-              <Image
-                src={person.image}
-                alt={person.name}
-                width={236}
-                height={391}
-                className="rounded-[4px]"
-              />
-            </div>
-            <h2 className='text-[32px] mt-4'>{person.name}</h2>
-            <p className='text-[16px]'>{person.title}</p>
+     <div className="mt-16 flex flex-wrap justify-center gap-6">
+        <div className='flex flex-col items-center'>
+          <div className='bg-[#F5F5F5] w-[370px] h-[430px]'>
+            <Image
+              src='/person1.png'
+              alt='person1'
+              width={236}
+              height={391}
+              className="rounded-[4px]"
+            />
+          </div>
+          <h2 className='text-[32px] mt-4'>Emma Watson</h2>
+          <p className='text-[16px]'>Managing Director</p>
+          <div className="flex space-x-4 mt-4">
+            <FaTwitter size={20} />
+            <FaInstagram size={20} />
+            <FaLinkedin size={20} />
+          </div>
+        </div>
+        <div className='flex flex-col items-center'>
+          <div className='bg-[#F5F5F5] w-[370px] h-[430px]'>
+            <Image
+              src='/person2.png'
+              alt='person2'
+              width={294}
+              height={397}
+              className="rounded-[4px]"
+            />
+          </div>
+          <h2 className='text-[32px] mt-4'>John Doe</h2>
+          <p className='text-[16px]'>Marketing Manager</p>
             <div className="flex space-x-4 mt-4">
               <FaTwitter size={20} />
               <FaInstagram size={20} />
               <FaLinkedin size={20} />
             </div>
           </div>
-        ))}
+          <div className='flex flex-col items-center'>
+          <div className='bg-[#F5F5F5] w-[370px] h-[430px]'>
+            <Image
+              src='/person3.png'
+              alt='person3'
+              width={392}
+  height={150}  
+  className="rounded-[4px] w-[320px] h-[392px]"  
+/>   
+          </div>
+          <h2 className='text-[32px] mt-4'>Will Smith</h2>
+          <p className='text-[16px]'>Product Designer</p>
+          <div className="flex space-x-4 mt-4">
+            <FaTwitter size={20} />
+            <FaInstagram size={20} />
+            <FaLinkedin size={20} />
+          </div>
+        </div>
+
       </div>
 
       {/* Dots Section */}
