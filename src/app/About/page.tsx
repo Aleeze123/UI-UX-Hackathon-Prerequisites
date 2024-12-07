@@ -35,7 +35,7 @@ const About = () => {
           alt='Image 1'
           width={50} 
           height={50} 
-          className="object-contain"
+          className="object-contain w-[40px] h-[40px]"
         />
       </div>
       <h2 className='text-[32px] text-center text-black font-semibold mb-2'>
